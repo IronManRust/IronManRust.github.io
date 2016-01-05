@@ -16,6 +16,7 @@ html, body {
 body {
     background-image: url("index.png");
     background-repeat: repeat;
+    background-size: 100% 100%;
 }
 
 a:link, a:visited, a:active, a:hover {
