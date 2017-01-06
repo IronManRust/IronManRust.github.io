@@ -7,7 +7,7 @@ html, body {
     background-color: #000;
     color: #ff6;
     font-family: "Droid Sans", arial, verdana, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -25,42 +25,39 @@ a:link, a:visited, a:active, a:hover {
 
 .splash {
     color: #4ee;
-    font-size: 200%;
-    font-weight: 400;
-    width: 15em;
+    font-size: 3vw;
+    font-weight: normal;
+    width: 50vw;
     position: relative;
-    margin: 20% auto;
+    margin: 30vh 25vw auto 25vw;
     opacity: 0;
     z-index: 1;
-    animation: keyframes-splash 2s ease-out;
+    animation: keyframes-splash 6s ease-out;
 }
 
 .heading {
     color: #000;
-    font-size: 10em;
+    font-size: 10vw;
     text-align: center;
     text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
     text-transform: uppercase;
-    letter-spacing: -0.05em;
-    top: 25%;
-    left: 50%;
-    width: 10em;
+    letter-spacing: 0.05vw;
+    top: 25vh;
+    width: 150vw;
     position: absolute;
-    margin-left: -5em;
+    margin: auto 25vw auto -25vw;
     opacity: 0;
     z-index: 1;
-    animation: keyframes-heading 5s ease-out 3.5s;
+    animation: keyframes-heading 5s ease-out 7s;
 }
 
 .scroll {
-    font-size: 350%;
+    font-size: 6vw;
     text-align: justify;
-    left: 50%;
     bottom: 0;
-    height: 50em;
-    width: 18em;
+    height: 250vh;
+    width: 100vw;
     position: absolute;
-    margin-left: -9em;
     overflow: hidden;
     transform-origin: 50% 100%;
     transform: perspective(300px) rotateX(25deg);
@@ -79,7 +76,11 @@ a:link, a:visited, a:active, a:hover {
 .scroll-container {
     top: 100%;
     position: absolute;
-    animation: keyframes-scroll 100s linear 4s infinite;
+    animation: keyframes-scroll 100s linear 8s infinite;
+}
+
+.scroll-container p {
+    padding-bottom: 0.5em;
 }
 
 .scroll-title {
@@ -88,12 +89,15 @@ a:link, a:visited, a:active, a:hover {
 
 .scroll-content {
     text-align: justify;
-    margin: 0.8em 0;
+}
+
+.scroll-content a {
+    font-size: 4vw;
 }
 
 .social {
     align: bottom;
-    height: 1.0em;
+    height: 1em;
 }
 
 @keyframes keyframes-splash {
